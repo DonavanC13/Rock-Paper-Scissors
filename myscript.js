@@ -10,5 +10,10 @@ const playerSelection = "rock"
 console.log("Player selected:", playerSelection)
 
 function playRound(playerSelection, computerSelection){
+    console.log("Player selected:", playerSelection)
+    console.log("Computer selected:", computerSelection);
+    if (playerSelection === computerSelection){
+        return "It's a tie!";
+    }
 
 }
