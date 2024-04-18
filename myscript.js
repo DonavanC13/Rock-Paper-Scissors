@@ -18,7 +18,7 @@ function playGame() {
         } else if (result === "You lose!")
     {computerScore++;}
   }
-}
+
 
 console.log("Final scores:");
 console.log("Player score:", 
@@ -32,7 +32,7 @@ if (playerScore > computerScore) {
     console.log("Sorry, you lose the game.");
 } else {
     console.log(" ")
-}
+}}
 // this function allows us to gather the computers choice at random.
 function getComputerChoice() {
     const choices = ["rock", "paper", "scissors"];
