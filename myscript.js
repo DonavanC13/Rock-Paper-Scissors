@@ -1,3 +1,4 @@
+// this first function set the basis for the games scoreboard and playability.
 function playGame() {
     let playerScore = 0;
     let computerScore = 0;
@@ -20,7 +21,19 @@ function playGame() {
 }
 
 console.log("Final scores:");
-console.log()
+console.log("Player score:", 
+playerScore);
+console.log("Computer score:",
+computerScore);
+
+if (playerScore > computerScore) {
+    console.log("Congratulations! You win the game!");
+} else if (playerScore < computerScore){
+    console.log("Sorry, you lose the game.");
+} else {
+    console.log(" ")
+}
+// this function allows us to gather the computers choice at random.
 function getComputerChoice() {
     const choices = ["rock", "paper", "scissors"];
     const randomIndex = Math.floor(Math.random()* choices.length);
@@ -28,7 +41,7 @@ function getComputerChoice() {
  }
  const computerSelection = getComputerChoice();
 const playerSelection = "rock"
-
+// this function set the basis for game rules and allows rounds to be played.
 function playRound(playerSelection, computerSelection){
     console.log("Player selected:", playerSelection)
     console.log("Computer selected:", computerSelection);
