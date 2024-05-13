@@ -3,10 +3,10 @@ function playGame() {
     let playerScore = 0;
     let computerScore = 0;
 
-    //for (let i = 0; i < 5; i++) {
-    //    const playerSelection = 
-    //    prompt("Enter your choice(rock, paper, or scissors):").toLowerCase();
-    //    const computerSelection = getComputerChoice();
+    for (let i = 0; i < 5; i++) {
+        const playerSelection = 
+        prompt("Enter your choice(rock, paper, or scissors):").toLowerCase();
+        const computerSelection = getComputerChoice();
         console.log("Round", i + 1);
        console.log("Player selected:", playerSelection);
        console.log("Computer selected:", computerSelection);
